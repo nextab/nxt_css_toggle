@@ -1,0 +1,17 @@
+.nxt_input_trigger_container {
+  display: none;
+  margin-top: 0;
+  opacity: 0;
+  transition: all 500ms ease;
+  visibility: hidden;
+}
+
+input.nxt-trigger-input[type=checkbox] {
+  display: none;
+}
+input.nxt-trigger-input[type=checkbox]:checked + .nxt_input_trigger_container {
+  display: block;
+  margin: 20px auto 0;
+  opacity: 1;
+  visibility: visible;
+}
